@@ -1,8 +1,8 @@
 pkgbase=linux-radxa-qcom
 pkgver=7.0.11
-pkgrel=1
+pkgrel=2
 pkgdesc='linux-radxa-qcom'
-url='https://github.com/strongtz/linux-radxa-qcom'
+url='https://github.com/radxa/kernel'
 arch=(
   aarch64
 #  x86_64
@@ -41,7 +41,7 @@ options=(
   !strip
 )
 _srcname=linux-${pkgver%.*}
-_srcbranch=v7.0.11-qcom
+_srcbranch=linux-7.0.11
 source=(
   $_srcname::git+$url#branch=$_srcbranch
 )
